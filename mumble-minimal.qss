@@ -1,0 +1,105 @@
+/*
+  Minimal black/white Qt stylesheet for Mumble (Windows).
+  Load this file through Mumble's stylesheet setting (or Qt style override path, depending on build).
+*/
+
+QWidget {
+  background: #ffffff;
+  color: #111111;
+  font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 9pt;
+}
+
+QMainWindow,
+QDialog,
+QFrame,
+QGroupBox {
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+}
+
+QMenuBar,
+QStatusBar,
+QToolBar {
+  background: #ffffff;
+  color: #111111;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+QMenu {
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+}
+
+QMenu::item:selected {
+  background: #f3f3f3;
+  color: #111111;
+}
+
+QPushButton {
+  background: #111111;
+  color: #ffffff;
+  border: 1px solid #111111;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+QPushButton:hover {
+  background: #000000;
+}
+
+QPushButton:disabled {
+  background: #f0f0f0;
+  color: #888888;
+  border-color: #d8d8d8;
+}
+
+QLineEdit,
+QPlainTextEdit,
+QTextEdit,
+QComboBox,
+QSpinBox,
+QDoubleSpinBox {
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+
+QLineEdit:focus,
+QPlainTextEdit:focus,
+QTextEdit:focus,
+QComboBox:focus,
+QSpinBox:focus,
+QDoubleSpinBox:focus,
+QPushButton:focus {
+  border: 1px solid #111111;
+}
+
+QTreeView,
+QListView,
+QTableView {
+  background: #ffffff;
+  alternate-background-color: #fafafa;
+  border: 1px solid #d8d8d8;
+}
+
+QHeaderView::section {
+  background: #f6f6f6;
+  color: #111111;
+  border: 1px solid #d8d8d8;
+  padding: 4px;
+}
+
+QCheckBox,
+QRadioButton,
+QLabel {
+  color: #111111;
+}
+
+QToolTip {
+  background: #ffffff;
+  color: #111111;
+  border: 1px solid #d8d8d8;
+}
